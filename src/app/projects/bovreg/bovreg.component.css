@@ -1,0 +1,22 @@
+.project-logo {
+  max-width:250px;
+  max-height:250px;
+  float: left;
+  width:auto;
+  height:auto;
+  margin-bottom: 10px;
+}
+
+.container{
+  margin-top: 20px;
+}
+
+a {
+  text-decoration:none;
+  color:#5199a8;
+}
+
+a:hover {
+  color:#8dc7d3;
+}
+
