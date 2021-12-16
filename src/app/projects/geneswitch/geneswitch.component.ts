@@ -20,6 +20,10 @@ export class GeneswitchComponent implements OnInit {
     } else {
       this.router.navigate(['404']);
     }
+
+    // twitter js
+    (<any>window).twttr.widgets.load();
+
   }
 
 }
