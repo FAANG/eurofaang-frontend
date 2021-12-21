@@ -12,6 +12,8 @@ import { AquafaangComponent } from './projects/aquafaang/aquafaang.component';
 import { BovregComponent } from './projects/bovreg/bovreg.component';
 import { GeneswitchComponent } from './projects/geneswitch/geneswitch.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { HeaderComponent } from './navigation/header/header.component';
+import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     AquafaangComponent,
     BovregComponent,
     GeneswitchComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    HeaderComponent,
+    SidenavListComponent
   ],
   imports: [
     BrowserModule,
