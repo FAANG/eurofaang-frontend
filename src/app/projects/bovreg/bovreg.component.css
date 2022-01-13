@@ -1,9 +1,8 @@
 .project-logo {
+  height: auto;
   max-width:250px;
-  max-height:250px;
   float: left;
   width:auto;
-  height:auto;
   margin-bottom: 10px;
 }
 

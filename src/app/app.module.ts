@@ -14,6 +14,8 @@ import { GeneswitchComponent } from './projects/geneswitch/geneswitch.component'
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HeaderComponent } from './navigation/header/header.component';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
+import { GeronimoComponent } from './projects/geronimo/geronimo.component';
+import { RumigenComponent } from './projects/rumigen/rumigen.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.com
     GeneswitchComponent,
     PageNotFoundComponent,
     HeaderComponent,
-    SidenavListComponent
+    SidenavListComponent,
+    GeronimoComponent,
+    RumigenComponent
   ],
   imports: [
     BrowserModule,

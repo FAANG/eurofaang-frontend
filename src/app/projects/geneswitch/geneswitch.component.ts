@@ -12,7 +12,10 @@ export class GeneswitchComponent implements OnInit {
   project: string = 'GENE-SWitCH';
 
   constructor(private route: ActivatedRoute,
-              private router: Router) { }
+              private router: Router) {
+    // twitter js
+    (<any>window).twttr.widgets.load();
+  }
 
   ngOnInit(): void {
     if (setting.hasOwnProperty(this.project)) {
@@ -20,10 +23,6 @@ export class GeneswitchComponent implements OnInit {
     } else {
       this.router.navigate(['404']);
     }
-
-    // twitter js
-    (<any>window).twttr.widgets.load();
-
   }
 
 }

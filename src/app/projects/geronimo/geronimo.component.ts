@@ -1,15 +1,16 @@
 import { Component, OnInit } from '@angular/core';
+import {ActivatedRoute, Router } from '@angular/router';
+
 import  setting  from  '../../../assets/config/project-details.json';
-import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({
-  selector: 'app-bovreg',
-  templateUrl: './bovreg.component.html',
-  styleUrls: ['./bovreg.component.css']
+  selector: 'app-geronimo',
+  templateUrl: './geronimo.component.html',
+  styleUrls: ['./geronimo.component.css']
 })
-export class BovregComponent implements OnInit {
+export class GeronimoComponent implements OnInit {
   setting: any;
-  project: string = 'BovReg';
+  project: string = 'GEroNIMO';
 
   constructor(private route: ActivatedRoute,
               private router: Router) {
@@ -19,7 +20,7 @@ export class BovregComponent implements OnInit {
 
   ngOnInit(): void {
     if (setting.hasOwnProperty(this.project)) {
-      this.setting = setting['BovReg'];
+      this.setting = setting['GEroNIMO'];
     } else {
       this.router.navigate(['404']);
     }
