@@ -1,8 +1,8 @@
 .small-project-logo {
-  max-width:150px;
+  width: auto;
   max-height:150px;
+  object-fit: contain;
   float: left;
-  width:auto;
   height:auto;
   margin-bottom: 10px;
 }

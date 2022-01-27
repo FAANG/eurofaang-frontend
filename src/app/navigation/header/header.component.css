@@ -1,0 +1,35 @@
+@media(max-width: 959px){
+  mat-toolbar{
+    border-radius: 0;
+  }
+}
+
+.header-logo{
+  width: 150px;
+}
+
+mat-toolbar{
+  background-color: #e8e8e8;
+  border-radius: 3px;
+}
+
+.mat-button{
+  width: 160px;
+  margin-left: 10px;
+  padding-left: 5px;
+}
+.link-text{
+  font-size: 16px;
+  vertical-align: middle;
+  position: relative;
+  top: +1px;
+  left: +5px;
+}
+.menu-spacer{
+  margin-right: 20px;
+}
+.activebutton
+{
+  background-color: #6091c0;
+  color: white;
+}

@@ -1,41 +1,17 @@
-<div fxLayout="column wrap" fxLayoutAlign="center center">
-  <div fxLayout="row" fxLayoutAlign="center center" fxFill>
-    <div fxFlex.lt-sm="90" fxFlex.lt-md="80"  fxFlex="100">
-      <mat-toolbar>
-        <mat-toolbar-row>
-          <span> <img src="/assets/logos/eurofaang-logo.png" alt="image" class="header-logo"></span>
-          <span class="menu-spacer"></span>
-          <div>
-            <a mat-button [routerLink]="'/'" routerLinkActive="active">
-              <mat-icon>home</mat-icon>
-              <span class="link-text">Home</span></a>
-            <a mat-button [routerLink]="'/about'">
-              <mat-icon>format_align_justify</mat-icon>
-              <span class="link-text">About</span></a>
-            <a mat-button [matMenuTriggerFor]="projects">
-              <mat-icon>expand_more</mat-icon>
-              <span class="link-text">Projects</span></a>
-            <mat-menu #projects="matMenu">
-              <a mat-menu-item [routerLink]="'/projects/aquafaang'">AQUA-FAANG</a>
-              <a mat-menu-item [routerLink]="'/projects/bovreg'">BovReg</a>
-              <a mat-menu-item [routerLink]="'/projects/geneswitch'">GENE-SWitCH</a>
-            </mat-menu>
-          </div>
-        </mat-toolbar-row>
-      </mat-toolbar>
-    </div>
-  </div>
-
-  <div fxLayout="row" fxLayoutAlign="center center" fxFill>
-    <div fxFlex.lt-sm="90" fxFlex.lt-md="80" fxFlex="1140px" >
-      <router-outlet></router-outlet>
-    </div>
-  </div>
-
-</div>
-
-
-
-
+<mat-sidenav-container>
+  <mat-sidenav #sidenav role="navigation">
+    <app-sidenav-list (sidenavClose)="sidenav.close()"></app-sidenav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <app-header (sidenavToggle)="sidenav.toggle()"></app-header>
+    <main>
+      <div fxLayout="row" fxLayoutAlign="center center" fxFill style="background-color: white">
+        <div fxFlex.lt-sm="90" fxFlex.lt-md="80" fxFlex="1140px">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </main>
+  </mat-sidenav-content>
+</mat-sidenav-container>
 
 

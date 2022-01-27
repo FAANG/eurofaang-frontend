@@ -6,7 +6,8 @@ import {AquafaangComponent} from "./projects/aquafaang/aquafaang.component";
 import {BovregComponent} from "./projects/bovreg/bovreg.component";
 import {GeneswitchComponent} from "./projects/geneswitch/geneswitch.component";
 import {PageNotFoundComponent} from "./page-not-found/page-not-found.component"
-
+import {GeronimoComponent} from "./projects/geronimo/geronimo.component";
+import {RumigenComponent} from "./projects/rumigen/rumigen.component";
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -14,6 +15,8 @@ const routes: Routes = [
   { path: 'projects/aquafaang', component: AquafaangComponent },
   { path: 'projects/bovreg', component: BovregComponent },
   { path: 'projects/geneswitch', component: GeneswitchComponent },
+  { path: 'projects/geronimo', component: GeronimoComponent },
+  { path: 'projects/rumigen', component: RumigenComponent },
   {path: '404', component: PageNotFoundComponent},
   {path: '**', component: PageNotFoundComponent}
 ];

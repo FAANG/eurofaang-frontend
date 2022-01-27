@@ -6,35 +6,9 @@ body{
   font-size: 15px;
 }
 
-.main-container{
-  -webkit-font-smoothing: subpixel-antialiased;
-  font-family: Open Sans,Myriad Pro,Helvetica Neue,Helvetica,Arial,sans-serif;
-  word-wrap: normal;
-  color: #494949;
-}
 
-.header-logo{
-  width: 150px;
-}
 
-mat-toolbar{
-  background-color: #e8e8e8;
-}
 
-.mat-button{
-  padding-right: 60px;
-}
-
-.link-text{
-  font-size: 16px;
-  vertical-align: middle;
-  position: relative;
-  top: +1px;
-  left: +5px;
-}
-.menu-spacer{
-  margin-right: 20px;
-}
 
 
 

@@ -1,19 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
 import {ActivatedRoute, Router } from '@angular/router';
-
+import {WidgetService} from "../../services/widget.service";
 import  setting  from  '../../../assets/config/project-details.json';
 
 @Component({
   selector: 'app-aquafaang',
   templateUrl: './aquafaang.component.html',
-  styleUrls: ['./aquafaang.component.css']
+  styleUrls: ['./aquafaang.component.css'],
+  providers: [WidgetService]
 })
-export class AquafaangComponent implements OnInit {
+export class AquafaangComponent implements OnInit, OnDestroy {
   setting: any;
   project: string = 'AQUA-FAANG';
 
   constructor(private route: ActivatedRoute,
-              private router: Router) { }
+              private router: Router,
+              private widgetService: WidgetService) {
+    this.widgetService.initTwitterWidget();
+  }
 
   ngOnInit(): void {
     if (setting.hasOwnProperty(this.project)) {
@@ -21,10 +25,10 @@ export class AquafaangComponent implements OnInit {
     } else {
        this.router.navigate(['404']);
     }
+  }
 
-    // twitter js
-    (<any>window).twttr.widgets.load();
-
+  ngOnDestroy() {
+    this.widgetService.unsubscribeTwitterWidget();
   }
 
 }

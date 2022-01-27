@@ -1,18 +1,18 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
-import setting from '../../../assets/config/project-details.json';
-import {ActivatedRoute, Router} from "@angular/router";
-import {faTwitter, faFacebook, faLinkedin, faResearchgate} from '@fortawesome/free-brands-svg-icons';
+import {ActivatedRoute, Router } from '@angular/router';
 import {WidgetService} from "../../services/widget.service";
+import  setting  from  '../../../assets/config/project-details.json';
+import {faTwitter, faFacebook, faLinkedin, faResearchgate} from '@fortawesome/free-brands-svg-icons';
 
 @Component({
-  selector: 'app-bovreg',
-  templateUrl: './bovreg.component.html',
-  styleUrls: ['./bovreg.component.css'],
+  selector: 'app-rumigen',
+  templateUrl: './rumigen.component.html',
+  styleUrls: ['./rumigen.component.css'],
   providers: [WidgetService]
 })
-export class BovregComponent implements OnInit, OnDestroy {
+export class RumigenComponent implements OnInit, OnDestroy {
   setting: any;
-  project: string = 'BovReg';
+  project: string = 'GEroNIMO';
   faTwitter = faTwitter;
   faFacebook = faFacebook;
   faLinkedin = faLinkedin;
@@ -26,7 +26,7 @@ export class BovregComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     if (setting.hasOwnProperty(this.project)) {
-      this.setting = setting['BovReg'];
+      this.setting = setting['RUMIGEN'];
     } else {
       this.router.navigate(['404']);
     }

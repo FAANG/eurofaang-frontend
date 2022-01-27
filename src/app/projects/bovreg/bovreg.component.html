@@ -1,23 +1,138 @@
-<div fxLayout="row" class="container">
-  <div fxFlex="30%" fxLayoutAlign="center">
-    <img src="{{setting.image.url}}" alt="Project Logo" class="project-logo">
+<div fxLayout="column">
+  <div fxLayout="row" fxLayout.lt-md="column" class="container" fxLayoutGap="10px">
+    <div fxFlex="30%" fxLayoutAlign="center">
+      <img src="{{setting.image.url}}" alt="Project Logo" class="project-logo">
+    </div>
+
+    <div fxLayout="column" fxLayoutAlign="center">
+      <div>
+        <h3>
+          Identify genome features for phenotypic diversity in cattle
+        </h3>
+      </div>
+      <div>
+        <h3>
+          <a href="{{setting.url}}" target="_blank"> {{setting.url}} </a>
+        </h3>
+      </div>
+      <div>
+        <a href="https://twitter.com/bovreg?ref_src=twsrc%5Etfw" class="twitter-follow-button"
+           data-size="large" data-show-count="false" target="_blank"> Follow @bovreg </a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </div>
   </div>
 
-  <div fxLayout="column" fxLayoutAlign="center">
-    <div>
-      <h3>
-        Identify genome features for phenotypic diversity in cattle
-      </h3>
+  <div fxLayout="row" fxLayout.lt-md="column" class="container" fxLayoutGap="10px" style="background-color: #f7f9fb">
+    <div fxFlex="150px" fxLayoutAlign="left">
+      <img src="assets/bovreg/project-coord.png" alt="Project Coordinator">
     </div>
-    <div>
-      <h3>
-        <a href="{{setting.url}}" target="_blank"> {{setting.url}} </a>
-      </h3>
-    </div>
-    <div>
-      <a href="https://twitter.com/bovreg?ref_src=twsrc%5Etfw" class="twitter-follow-button"
-         data-size="large" data-show-count="false" target="_blank"> Follow @bovreg </a>
-      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    <div class="rounded-div">
+      <p>Project coordinator: Christa Kühn (FBN)</p>
+      <p>kuehn@fbn-dummerstorf.de</p>
     </div>
   </div>
+
+  <div>
+    <h2> Aim & Objectives </h2>
+    <p>
+      BovReg will fill identify functional elements in the cattle genome and will establish a respective genome
+      annotation catalogue. The improved annotation of the bovine genome will open new perspectives for understanding of
+      the genetic architecture of complex traits in cattle. BovReg will provide knowledge, how the genetic and
+      epigenetic make-up of cattle translates into divergent phenotypes and how it enables response to environmental
+      challenges. Scientific and industrial breeding communities are in need of respective data to include predictive
+      biology in new breeding and management tools for initiating innovative future cattle production systems.
+    </p>
+
+    Specific objectives are:
+    <ul class="disc">
+      <li>Establish new tools and resources for functional genome annotation</li>
+      <li>Annotate functionally active genomic regions in tissues that are that are highly relevant for the BovReg
+        target traits:
+        <ul class="circle">
+          <li>health//disease susceptibility (mastitis)</li>
+          <li>robustness (fertility)</li>
+          <li>biological efficiency (nutrient conversion, greenhouse gas emission, feed efficiency, production) in dairy
+            and beef cattle
+          </li>
+        </ul>
+      </li>
+      <li>Find and verify functionally relevant variation in annotated regulatory regions</li>
+      <li>Understand the epigenetic regulation, how environmental challenges impact the genome</li>
+      <li>Develop prototype models for integrating biological knowledge on regulatory variation in genomic selection
+      </li>
+      <li>Provide targeted training, dissemination and communication activities</li>
+      <li>Assess social perception and ethical dimension of the use of novel genomic information</li>
+    </ul>
+
+    <h2> Concept </h2>
+    <p>
+      The BovReg concept comprises the consequential workflow and interaction of 11 WPs to establish a full knowledge
+      hub that provides advances in basic sciences along with translational research and the ethical evaluation of the
+      project’s potential applications.
+    </p>
+
+    <p class="image-content">
+      <img src="assets/bovreg/concept.png" alt="Concept">
+    </p>
+
+    <p>
+      BovReg will identify functionally active structural elements in the bovine genome and functionally validate
+      candidate regulatory variants. The project will establish a comprehensive map of these elements based on cell
+      lines and a comprehensive catalogue of tissues highly relevant to BovReg target traits. The tissue samples
+      represent a wide spectrum of the bovine species (both gender, three divergent breeds representing different
+      metabolic types and 5 ontogenetic stages) and are attached to comprehensive phenotypic metadata. Development and
+      standardization of pipelines for the respective data analyses and deposit into public domain archives will be a
+      sustainable legacy of our project, fully open to public access. Integrating data of whole-genome association
+      studies for BovReg target traits with data on expression and metabolomic QTL and the effects of mobile genomic
+      elements will further add to the map, and provide a resource for prioritising variants and identifying potential
+      mechanisms underlying genetic associations. BovReg will use respective candidate regulatory variants for
+      functional confirmation and for the development of more accurate genomic prediction tools for selective breeding
+      of the target traits. A particular feature of BovReg is the analysis of ethical dimensions and societal perception
+      of new genomic breeding technologies.
+    </p>
+
+    <h2>Impact</h2>
+
+    <p>BovReg is committed to different scientific, commercial and societal impacts:</p>
+    <p class="image-content">
+      <img src="assets/bovreg/impact.png" alt="Concept">
+    </p>
+
+    <h2>Project structure and partners</h2>
+    <p class="image-content">
+      <img src="assets/bovreg/project-structure.png" alt="Concept">
+    </p>
+
+    <p>
+      BovReg is coordinated by the Research Institute For Farm Animal Biology (FBN). It brings together experts from
+      bioinformatics (2), molecular genetics (10), quantitative genetics (8), animal breeding (11), (reproductive)
+      physiology (3), ethics (1), social science (2), dissemination and exploitation/innovation (2).
+    </p>
+
+    <p>
+      BovReg Website: BovReg - <a href="https://www.bovreg.eu/" target='_blank'>Identification of functionally active genomic features
+      relevant to phenotypic diversity
+      and plasticity in cattle</a>
+    </p>
+
+    <p class="social-btn">
+      Social media links:
+      <span>
+          <a href="https://www.facebook.com/BovReg.H2020" target='_blank'><fa-icon class="fa-3x" [icon]="faFacebook"></fa-icon></a>
+        </span>
+      <span>
+        <a href="https://twitter.com/BovReg" target='_blank'><fa-icon class="fa-3x" [icon]="faTwitter"></fa-icon></a>
+      </span>
+      <span>
+        <a href="https://www.linkedin.com/company/bovreg/" target='_blank'><fa-icon class="fa-3x" [icon]="faLinkedin"></fa-icon></a>
+      </span>
+      <span>
+        <a href="https://www.researchgate.net/project/BovReg-Identification-of-functionally-active-genomic-features-relevant-to-phenotypic-diversity-and-plasticity-in-cattle" target='_blank'><fa-icon class="fa-3x" [icon]="faResearchgate"></fa-icon></a>
+      </span>
+    </p>
+
+  </div>
 </div>
+
