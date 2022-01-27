@@ -2,6 +2,7 @@ import {Component, OnDestroy, OnInit} from '@angular/core';
 import {ActivatedRoute, Router } from '@angular/router';
 import {WidgetService} from "../../services/widget.service";
 import  setting  from  '../../../assets/config/project-details.json';
+import {faTwitter, faFacebook, faLinkedin} from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-geronimo',
@@ -12,6 +13,9 @@ import  setting  from  '../../../assets/config/project-details.json';
 export class GeronimoComponent implements OnInit, OnDestroy {
   setting: any;
   project: string = 'GEroNIMO';
+  faTwitter = faTwitter;
+  faFacebook = faFacebook;
+  faLinkedin = faLinkedin;
 
   constructor(private route: ActivatedRoute,
               private router: Router,
