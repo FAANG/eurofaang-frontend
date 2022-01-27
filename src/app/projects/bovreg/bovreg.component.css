@@ -19,3 +19,42 @@ a:hover {
   color:#8dc7d3;
 }
 
+.social-btn span{
+  padding: 20px;
+}
+
+.para-title{
+  font-weight: bold;
+}
+
+h2{
+  color: #6f9cc6;
+  margin-top: 30px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+ul .disc{
+  list-style-type:disc
+}
+
+ul .circle{
+  list-style-type:circle
+}
+
+.image-content{
+  text-align: center;
+  padding: 20px
+}
+
+.rounded-div {
+  border-radius: 20px;
+  width: auto;
+  height: auto;
+  padding: 5px 30px 5px 30px;
+  border-color: #d7dbdf;
+  border-style: solid;
+
+}
