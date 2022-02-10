@@ -5,12 +5,23 @@
 }
 
 .header-logo{
-  width: 150px;
+  width: 291px;
+  margin-top: 20px;
 }
 
 mat-toolbar{
-  background-color: #e8e8e8;
   border-radius: 3px;
+  width: 100%;
+}
+
+.banner_image {
+  background: url("../../../assets/banner/eurofaang_banner.png") 100% no-repeat;
+  /*background-size: contain;*/
+  background-size: cover;
+  resize: both;
+  height: 155px;
+  max-height: 155px;
+  width: auto\9; /* ie8 */
 }
 
 .mat-button{
