@@ -1,0 +1,10 @@
+.banner_image {
+  background: url("../../../assets/banner/eurofaang_banner.png") 100% no-repeat;
+  /*background-size: contain;*/
+  background-size: cover;
+  resize: both;
+  height: 155px;
+  max-height: 155px;
+  width: 100%;
+  width: auto \9; /* ie8 */
+}
