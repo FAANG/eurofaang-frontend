@@ -8,3 +8,14 @@
   width: 100%;
   width: auto \9; /* ie8 */
 }
+
+.banner-text {
+  font-size: 30px;
+  color: #e9f2f5;
+}
+
+.banner-text-small {
+  font-size: 18px;
+  color: #e9f2f5;
+  margin-top: 10px;
+}

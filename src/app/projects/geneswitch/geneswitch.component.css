@@ -74,3 +74,8 @@ ul .circle{
 .enclosed-text h2{
   margin-top: 0;
 }
+
+.project-link {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}

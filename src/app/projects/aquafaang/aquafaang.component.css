@@ -50,6 +50,12 @@ ul .disc{
 .social-btn span{
   margin-right: 20px;
 }
+
 .social-btn{
   margin-bottom: 20px;
+}
+
+.project-link {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
