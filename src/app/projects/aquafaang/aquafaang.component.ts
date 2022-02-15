@@ -1,6 +1,7 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {ActivatedRoute, Router } from '@angular/router';
 import {WidgetService} from "../../services/widget.service";
+import {faTwitter, faFacebook, faLinkedin, faResearchgate, faYoutube} from '@fortawesome/free-brands-svg-icons';
 import  setting  from  '../../../assets/config/project-details.json';
 
 @Component({
@@ -12,6 +13,11 @@ import  setting  from  '../../../assets/config/project-details.json';
 export class AquafaangComponent implements OnInit, OnDestroy {
   setting: any;
   project: string = 'AQUA-FAANG';
+  faTwitter = faTwitter;
+  faFacebook = faFacebook;
+  faLinkedin = faLinkedin;
+  faResearchgate = faResearchgate;
+  faYoutube = faYoutube;
 
   constructor(private route: ActivatedRoute,
               private router: Router,
