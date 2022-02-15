@@ -1,6 +1,8 @@
 <mat-toolbar>
   <mat-toolbar-row>
-    <span> <img src="/assets/logos/eurofaang-logo.png" alt="image" class="header-logo"></span>
+    <span>
+      <a [routerLink]="'/'"> <img src="/assets/logos/eurofaang-logo.png" alt="image" class="header-logo"> </a>
+    </span>
     <span class="menu-spacer"></span>
 
     <div fxHide.gt-xs>
@@ -9,7 +11,7 @@
       </button>
     </div>
 
-    <div fxFlex fxLayout fxLayoutAlign="start" fxHide.xs>
+    <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
       <a mat-button [routerLink]="'/'" routerLinkActive="activebutton" [routerLinkActiveOptions]="{exact: true}">
         <mat-icon>home</mat-icon>
         <span class="link-text">Home</span></a>

@@ -17,6 +17,7 @@ import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.com
 import { GeronimoComponent } from './projects/geronimo/geronimo.component';
 import { RumigenComponent } from './projects/rumigen/rumigen.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { BannerComponent } from './navigation/banner/banner.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     HeaderComponent,
     SidenavListComponent,
     GeronimoComponent,
-    RumigenComponent
+    RumigenComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,

@@ -1,8 +1,10 @@
 .project-logo {
-  height: auto;
-  max-width:250px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
   float: left;
   width:auto;
+  height:auto;
   margin-bottom: 10px;
 }
 
@@ -55,4 +57,9 @@ ul .circle{
   padding: 5px 30px 5px 30px;
   border-color: #d7dbdf;
   border-style: solid;
+}
+
+.project-link {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }

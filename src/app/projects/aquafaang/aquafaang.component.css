@@ -19,3 +19,43 @@ a:hover {
 .container{
   margin-top: 20px;
 }
+
+.rounded-div {
+  border-radius: 20px;
+  width: auto;
+  height: auto;
+  padding: 5px 30px 5px 30px;
+  border-color: #d7dbdf;
+  border-style: solid;
+}
+
+h2{
+  color: #6f9cc6;
+  margin-top: 30px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+ul .disc{
+  list-style-type:disc
+}
+
+.image-content{
+  text-align: center;
+  padding: 20px
+}
+
+.social-btn span{
+  margin-right: 20px;
+}
+
+.social-btn{
+  margin-bottom: 20px;
+}
+
+.project-link {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}

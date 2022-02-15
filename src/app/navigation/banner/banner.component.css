@@ -1,0 +1,21 @@
+.banner_image {
+  background: url("../../../assets/banner/eurofaang_banner.png") 100% no-repeat;
+  /*background-size: contain;*/
+  background-size: cover;
+  resize: both;
+  height: 155px;
+  max-height: 155px;
+  width: 100%;
+  width: auto \9; /* ie8 */
+}
+
+.banner-text {
+  font-size: 30px;
+  color: #e9f2f5;
+}
+
+.banner-text-small {
+  font-size: 18px;
+  color: #e9f2f5;
+  margin-top: 10px;
+}

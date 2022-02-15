@@ -59,3 +59,8 @@ ul .circle{
   border-color: #d7dbdf;
   border-style: solid;
 }
+
+.project-link {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}

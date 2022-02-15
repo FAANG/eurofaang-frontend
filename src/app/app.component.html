@@ -2,8 +2,10 @@
   <mat-sidenav #sidenav role="navigation">
     <app-sidenav-list (sidenavClose)="sidenav.close()"></app-sidenav-list>
   </mat-sidenav>
+
   <mat-sidenav-content>
     <app-header (sidenavToggle)="sidenav.toggle()"></app-header>
+    <app-banner></app-banner>
     <main>
       <div fxLayout="row" fxLayoutAlign="center center" fxFill style="background-color: white">
         <div fxFlex.lt-sm="90" fxFlex.lt-md="80" fxFlex="1140px">
@@ -12,6 +14,7 @@
       </div>
     </main>
   </mat-sidenav-content>
+
 </mat-sidenav-container>
 
 

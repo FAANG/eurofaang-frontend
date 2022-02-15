@@ -20,3 +20,62 @@ a {
 a:hover {
   color:#8dc7d3;
 }
+
+.top-spacer{
+  margin-top: 30px;
+}
+
+.social-btn span{
+  margin-right: 20px;
+}
+.social-btn{
+  margin-bottom: 20px;
+}
+
+h2{
+  color: #6f9cc6;
+  margin-top: 30px;
+}
+
+h3{
+  margin-top: 10px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+ul .disc{
+  list-style-type:disc
+}
+
+ul .circle{
+  list-style-type:circle
+}
+
+.image-content{
+  text-align: center;
+}
+
+.rounded-div {
+  border-radius: 20px;
+  width: auto;
+  height: auto;
+  padding: 5px 30px 5px 30px;
+  border-color: #d7dbdf;
+  border-style: solid;
+}
+
+.enclosed-text{
+  background-color: #f7f9fb;
+  padding-bottom: 5px;
+}
+
+.enclosed-text h2{
+  margin-top: 0;
+}
+
+.project-link {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
