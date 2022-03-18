@@ -1,10 +1,10 @@
 <div fxLayout="column">
-  <div fxLayout="row" fxLayout.lt-md="column" class="container" fxLayoutGap="10px">
-    <div fxFlex="30%" fxLayoutAlign="center">
+  <div fxLayout="row" fxLayout.lt-md="column" class="container" fxLayoutGap="15px">
+    <div fxFlex="30%" fxLayoutAlign="center start">
       <img src="{{setting.image.url}}" alt="Project Logo" class="project-logo">
     </div>
 
-    <div fxLayout="column" fxLayoutAlign="center">
+    <div fxFlex="70%" fxLayout="column" fxLayoutAlign="center">
       <div>
         <h3>
           Identify genome features for phenotypic diversity in cattle
@@ -15,14 +15,21 @@
           <a href="{{setting.url}}" target="_blank"> {{setting.url}} </a>
         </h3>
       </div>
-      <div>
-        <a href="https://twitter.com/bovreg?ref_src=twsrc%5Etfw" class="twitter-follow-button"
-           data-size="large" data-show-count="false" target="_blank"> Follow @bovreg </a>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-      </div>
       <div class="project-link">
         Link to FAANG data portal: <a href="https://data.faang.org/projects/BovReg" target='_blank'>
         FAANG (BovReg) </a>
+      </div>
+      <div>
+        <div class="twitter-container">
+          <a class="twitter-timeline" href="https://twitter.com/bovreg"
+             data-height="300"
+             data-theme="light"
+             data-width="650"
+             data-chrome="noborders nofooter noscrollbar transparent">
+            Tweets by EuroFaang
+          </a>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
       </div>
     </div>
   </div>

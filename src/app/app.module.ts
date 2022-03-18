@@ -18,6 +18,7 @@ import { GeronimoComponent } from './projects/geronimo/geronimo.component';
 import { RumigenComponent } from './projects/rumigen/rumigen.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { BannerComponent } from './navigation/banner/banner.component';
+import { TwitterWidgetComponent } from './widgets/twitter-widget/twitter-widget.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { BannerComponent } from './navigation/banner/banner.component';
     SidenavListComponent,
     GeronimoComponent,
     RumigenComponent,
-    BannerComponent
+    BannerComponent,
+    TwitterWidgetComponent
   ],
   imports: [
     BrowserModule,

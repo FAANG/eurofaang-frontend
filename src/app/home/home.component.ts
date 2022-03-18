@@ -1,10 +1,5 @@
-// @ts-nocheck
-import { Component, OnInit, OnDestroy } from '@angular/core';
-import {Title} from '@angular/platform-browser';
-import {ActivatedRoute, Router} from '@angular/router';
+import { Component, OnInit } from '@angular/core';
 import {WidgetService} from "../services/widget.service";
-
-
 
 @Component({
   selector: 'app-home',
@@ -12,20 +7,21 @@ import {WidgetService} from "../services/widget.service";
   styleUrls: ['./home.component.css'],
   providers: [WidgetService]
 })
-export class HomeComponent implements OnInit, OnDestroy {
+export class HomeComponent implements OnInit {
+  twitterUrl: string = 'https://twitter.com/EuroFaang';
 
-  constructor(private route: ActivatedRoute,
-              private title: Title,
-              private router: Router,
-              private widgetService: WidgetService) {
+  constructor(private widgetService: WidgetService) {
     this.widgetService.initTwitterWidget();
   }
 
   ngOnInit(): void {
+
   }
 
   ngOnDestroy() {
     this.widgetService.unsubscribeTwitterWidget()
   }
+
+
 
 }
