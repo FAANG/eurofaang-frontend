@@ -19,6 +19,7 @@ a:hover {
 
 .container{
   margin-top: 20px;
+  height: 100%;
 }
 
 .rounded-div {
@@ -57,6 +58,11 @@ ul .disc{
 }
 
 .project-link {
-  margin-top: 15px;
   margin-bottom: 15px;
+}
+
+.twitter-container {
+  font-family: sans-serif;
+  font-size: 12px;
+  margin-bottom: 20px;
 }
