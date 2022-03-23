@@ -1,8 +1,9 @@
 .small-project-logo {
-  width: auto;
-  max-height:150px;
+  max-width: 100%;
+  max-height: 100%;
   object-fit: contain;
   float: left;
+  width:auto;
   height:auto;
   margin-bottom: 10px;
 }
@@ -61,7 +62,6 @@ ul .disc{
 
 .twitter-container {
   font-family: sans-serif;
-  font-size: 2em;
-  background-color: #f5f5f5;
+  font-size: 12px;
   margin-bottom: 20px;
 }
