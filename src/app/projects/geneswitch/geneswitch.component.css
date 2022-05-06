@@ -85,3 +85,8 @@ ul .circle{
   font-size: 12px;
   margin-bottom: 20px;
 }
+
+.red-italic{
+  font-style: italic;
+  color: red;
+}
